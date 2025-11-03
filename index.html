@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofyan Taurid Ode Madi | Portfolio</title>
+  <meta name="robots" content="noindex">
+  <style>
+    :root {
+      --midnight: #0a0f14;
+      --steel: #1a232d;
+      --green: #00ff88;
+      --white: #f0f0f0;
+      --muted: #a0aab3;
+    }
+    * {box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif;}
+    body {
+      background: var(--midnight);
+      color: var(--white);
+      display: flex;
+      min-height: 100vh;
+      overflow: hidden;
+      animation: fadeIn 1s ease forwards;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 230px;
+      background: var(--steel);
+      border-right: 2px solid rgba(0,255,136,0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 15px;
+    }
+    .sidebar h2 {
+      color: var(--green);
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+    .nav-btn {
+      background: transparent;
+      border: 2px solid var(--green);
+      color: var(--green);
+      padding: 10px 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: auto;
+      transition: all 0.3s ease;
+    }
+    .nav-btn:hover {
+      background: var(--green);
+      color: var(--midnight);
+      box-shadow: 0 0 12px var(--green);
+      transform: translateY(-2px);
+    }
+    /* Content */
+    .content {
+      flex: 1;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    h1 {
+      font-size: 36px;
+      color: var(--white);
+      letter-spacing: 1px;
+    }
+    h1 span {
+      color: var(--green);
+    }
+    p {
+      color: var(--muted);
+      margin: 15px 0 25px;
+      max-width: 600px;
+      line-height: 1.7;
+    }
+    .links {
+      display: flex;
+      gap: 12px;
+    }
+    .link-btn {
+      background: transparent;
+      border: 1px solid var(--green);
+      color: var(--green);
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.3s;
+    }
+    .link-btn:hover {
+      background: var(--green);
+      color: var(--midnight);
+      box-shadow: 0 0 8px var(--green);
+    }
+    footer {
+      position: absolute;
+      bottom: 15px;
+      left: 260px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    @media (max-width: 768px) {
+      .sidebar {width: 100px; padding: 20px 10px;}
+      .sidebar h2 {font-size: 14px;}
+      .content {padding: 30px;}
+      h1 {font-size: 26px;}
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>STOM</h2>
+    <button class="nav-btn" onclick="window.location.href='unm.html'">UNM</button>
+  </aside>
+
+  <main class="content">
+    <h1>Halo, Saya <span>Sofyan Taurid Ode Madi</span></h1>
+    <p>
+      Mahasiswa Teknik Komputer di Universitas Negeri Makassar dengan minat pada jaringan, keamanan digital, dan sistem terdistribusi.
+      Portofolio ini menampilkan proyek, eksperimen, dan penelitian kecil yang saya kembangkan selama studi.
+    </p>
+
+    <div class="links">
+      <a href="https://github.com/sofyantauridodemadi" target="_blank" class="link-btn">GitHub</a>
+      <a href="mailto:sofyan@example.com" class="link-btn">Email</a>
+    </div>
+  </main>
+
+  <footer>© 2025 Sofyan Taurid Ode Madi — Portfolio</footer>
+</body>
+</html>
